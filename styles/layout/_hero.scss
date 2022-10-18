@@ -1,18 +1,118 @@
 header {
     height: 90vh;
     background: url(/assets/img/Header\ main\ page.jpg) center/cover;
+
     .top-bar {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        h5 {
-            font-family: $font2;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        ul {
+        background: $grey;
+        .top-bar-container {
+            width: 90%;
             display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            color: $white;
+            padding: 5px 0;
+
+            h5 {
+                font-family: $font2;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            ul {
+                display: flex;
+                li {
+                    margin-left: 14px;
+                    font-family: $font2;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .nav-bar {
+        background: transparent;
+        margin-top: 50px;
+        .nav-bar-container {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            img {
+                justify-content: left;
+                object-fit: cover;
+                height: 30px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                font-family: $font2;
+                font-size: 19px;
+                color: $white;
+                text-transform: uppercase;
+                align-items: center;
+                #button-visiter {
+                    background: $yellow;
+                    color: $black;
+                    font-family: $font2;
+                    font-size: 19px;
+                    padding: 5px 15px;
+                    text-transform: uppercase;
+                }
+                li {
+                    position: relative;
+                }
+                :first-child:after {
+                    position: absolute;
+                    content: "";
+                    background: $yellow;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .header-content {
+        margin-top: 150px;
+        display: flex;
+
+        .header-content-txt {
+            margin: 0 auto;
+            text-align: center;
+            color: $white;
+            h5 {
+                @include h5;
+                margin-bottom: 25px;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 25%;
+                    height: 3px;
+                    background: $yellow;
+                    top: 50%;
+                    transform: translate(-110%, -50%);
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 25%;
+                    height: 3px;
+                    background: $yellow;
+                    top: 50%;
+                    transform: translate(10%, -50%);
+                }
+            }
+            h1 {
+                @include h1;
+                margin-bottom: 130px;
+            }
+            i {
+                font-size: 4rem;
+            }
         }
     }
 }

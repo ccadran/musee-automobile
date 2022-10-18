@@ -12,6 +12,19 @@
   box-sizing: border-box;
 }
 
+.button {
+  margin-top: 30px;
+  background: #f6c90e;
+  padding: 15px;
+  border: none;
+  font-family: satoshi-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.button:hover {
+  cursor: pointer;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,16 +38,221 @@ header {
   background: url(/assets/img/Header\ main\ page.jpg) center/cover;
 }
 header .top-bar {
+  background: #393e46;
+}
+header .top-bar .top-bar-container {
   width: 90%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  color: #ffffff;
+  padding: 5px 0;
 }
-header .top-bar h5 {
+header .top-bar .top-bar-container h5 {
   font-family: satoshi-regular, sans-serif;
   font-weight: bold;
   font-size: 14px;
 }
-header .top-bar ul {
+header .top-bar .top-bar-container ul {
   display: flex;
+}
+header .top-bar .top-bar-container ul li {
+  margin-left: 14px;
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .nav-bar {
+  background: transparent;
+  margin-top: 50px;
+}
+header .nav-bar .nav-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+header .nav-bar .nav-bar-container img {
+  justify-content: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30px;
+}
+header .nav-bar .nav-bar-container ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  align-items: center;
+}
+header .nav-bar .nav-bar-container ul #button-visiter {
+  background: #f6c90e;
+  color: #242424;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 19px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+header .nav-bar .nav-bar-container ul li {
+  position: relative;
+}
+header .nav-bar .nav-bar-container ul :first-child:after {
+  position: absolute;
+  content: "";
+  background: #f6c90e;
+  height: 3px;
+  bottom: -10px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+}
+header .header-content {
+  margin-top: 150px;
+  display: flex;
+}
+header .header-content .header-content-txt {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+header .header-content .header-content-txt h5 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+}
+header .header-content .header-content-txt h5:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background: #f6c90e;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+header .header-content .header-content-txt h5:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background: #f6c90e;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+header .header-content .header-content-txt h1 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+header .header-content .header-content-txt i {
+  font-size: 4rem;
+}
+
+.section-infos {
+  background: #393e46;
+  padding: 0 60px;
+}
+.section-infos h2 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 100px;
+}
+.section-infos h2:after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 8%;
+}
+.section-infos .tarifs-horaires {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 150px;
+  justify-content: center;
+}
+.section-infos .tarifs-horaires p {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: 35px;
+}
+.section-infos .tarifs-horaires p span {
+  font-weight: bold;
+}
+.section-infos .tarifs-horaires h3 {
+  margin-bottom: 50px;
+  font-family: librebaskerville-bold, serif;
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.section-infos .tarifs-horaires .tarifs {
+  margin-right: 50px;
+  width: 40%;
+  background: url(/assets/img/tarifs.jpg) center/cover;
+  padding: 80px 30px 35px 40px;
+}
+.section-infos .tarifs-horaires .tarifs .tarifs-normal {
+  margin-bottom: 50px;
+}
+.section-infos .tarifs-horaires .tarifs .tarifs-spe {
+  margin-bottom: 70px;
+}
+.section-infos .tarifs-horaires .horaires {
+  background: url(/assets/img/horraires.jpg) center/cover;
+  width: 40%;
+  padding: 80px 30px 35px 40px;
+}
+.section-infos .tarifs-horaires .horaires .avril {
+  margin-bottom: 50px;
+}
+.section-infos .tarifs-horaires .horaires .juillet {
+  margin-bottom: 70px;
+}
+
+.section-confiance {
+  padding: 0 60px;
+  margin-top: 150px;
+}
+.section-confiance h2 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  position: relative;
+}
+.section-confiance h2:after {
+  position: absolute;
+  content: "";
+  background: #242424;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 8%;
+}
+.section-confiance p {
+  font-family: librebaskerville-bold, serif;
+  font-size: 32px;
+  font-weight: bold;
+  width: 70%;
+  margin-bottom: 100px;
+}
+.section-confiance .grid-partenaire {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=index.css.map */

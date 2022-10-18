@@ -1,0 +1,65 @@
+.section-infos {
+    background: $grey;
+    padding: 0 60px;
+    h2 {
+        @include h2;
+        color: $white;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            background: $white;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            width: 8%;
+        }
+        margin-bottom: 100px;
+    }
+    .tarifs-horaires {
+        display: flex;
+        margin-top: 40px;
+        padding-bottom: 150px;
+        justify-content: center;
+        p {
+            @include p;
+            color: $white;
+            line-height: 35px;
+            span {
+                font-weight: bold;
+            }
+        }
+        h3 {
+            margin-bottom: 50px;
+            @include h3;
+            color: $white;
+        }
+
+        .tarifs {
+            margin-right: 50px;
+            width: 40%;
+            background: url(/assets/img/tarifs.jpg) center/cover;
+
+            padding: 80px 30px 35px 40px;
+
+            .tarifs-normal {
+                margin-bottom: 50px;
+            }
+            .tarifs-spe {
+                margin-bottom: 70px;
+            }
+        }
+        .horaires {
+            background: url(/assets/img/horraires.jpg) center/cover;
+            width: 40%;
+
+            padding: 80px 30px 35px 40px;
+            .avril {
+                margin-bottom: 50px;
+            }
+            .juillet {
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
