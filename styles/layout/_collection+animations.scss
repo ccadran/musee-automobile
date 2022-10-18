@@ -1,0 +1,14 @@
+body {
+    margin: 0 60px;
+}
+
+.collection-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animations-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
