@@ -1,0 +1,10 @@
+header {
+    height: 90vh;
+    background: url(/assets/img/Header\ main\ page.jpg) center/cover;
+    .top-bar {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}

@@ -21,6 +21,44 @@ $white: #ffffff;
     padding: 0;
     box-sizing: border-box;
 }
+@mixin h1 {
+    font-family: $font1;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin h2 {
+    font-family: $font1;
+    font-size: 64px;
+    font-weight: bold;
+}
+@mixin h3 {
+    font-family: $font1;
+    font-size: 44px;
+    font-weight: bold;
+}
+@mixin h4 {
+    font-family: $font1;
+    font-size: 32px;
+    font-weight: bold;
+}
+@mixin h5 {
+    font-family: $font1;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin h6 {
+    font-family: $font1;
+    font-size: 28px;
+    font-weight: bold;
+}
+@mixin p {
+    font-family: $font2;
+    font-size: 26px;
+    font-weight: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
