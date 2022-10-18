@@ -1,1 +1,21 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(../assets/fonts/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: "librebaskerville-bold";
+  src: url(../assets/fonts/LibreBaskerville-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */
