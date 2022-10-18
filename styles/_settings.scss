@@ -1,10 +1,12 @@
 @font-face {
     font-family: "satoshi-regular";
-    src: url(../assets/fonts/Satoshi-Regular.otf);
+    src: url(/assets/fonts/satoshi-regular-webfont.woff)
+        url(/assets/fonts/satoshi-regular-webfont.woff2);
 }
 @font-face {
     font-family: "librebaskerville-bold";
-    src: url(../assets/fonts/LibreBaskerville-Bold.ttf);
+    src: url(/assets/fonts/librebaskerville-bold-webfont.woff)
+        url(/assets/fonts/librebaskerville-bold-webfont.woff2);
 }
 
 $font1: librebaskerville-bold, serif;
