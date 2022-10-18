@@ -71,7 +71,27 @@ $white: #ffffff;
     font-size: 26px;
     font-weight: normal;
 }
-
+h2 {
+    @include h2;
+    &:after {
+        position: absolute;
+        content: "";
+        background: $black;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        width: 8%;
+    }
+}
+h4 {
+    @include h4;
+}
+h3 {
+    @include h3;
+}
+p {
+    @include p;
+}
 html {
     scroll-behavior: smooth;
 }

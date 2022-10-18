@@ -1,14 +1,67 @@
-body {
-    margin: 0 60px;
-}
-
 .collection-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.collection-txt {
+    margin-left: 50px;
+}
+
+.collection-txt h4,
+.collection-txt p {
+    margin: 10px 0;
+}
+
+section.collection {
+    margin: 50px 60px;
 }
 
 .animations-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+    margin: 50px 60px;
+}
+
+.animation-txt {
+    width: 50%;
+}
+
+.animation-txt h4,
+.animation-txt p {
+    margin: 10px 0;
+}
+
+h2 {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "";
+        background: $black;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        width: 8%;
+    }
+}
+
+.animations h2 {
+    margin-left: 60px;
+}
+
+.savoir-button {
+    margin-top: 30px;
+    background: #f6c90e;
+    padding: 15px;
+    border: none;
+    font-family: $font2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.savoir-button:hover {
+    cursor: pointer;
 }
