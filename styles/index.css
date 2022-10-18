@@ -29,4 +29,12 @@ header .top-bar {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+header .top-bar h5 {
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .top-bar ul {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
