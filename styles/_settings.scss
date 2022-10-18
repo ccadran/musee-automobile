@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "satoshi-regular";
+    src: url(../assets/fonts/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: "librebaskerville-bold";
+    src: url(../assets/fonts/LibreBaskerville-Bold.ttf);
+}
+
+$font1: librebaskerville-bold, serif;
+$font2: satoshi-regular, sans-serif;
+$black: #242424;
+$grey: #393e46;
+$yellow: #f6c90e;
+$white: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
