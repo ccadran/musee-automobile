@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Musée de l'Automobile de Valençay</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         />
-        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
     </head>
     <body>
         <header>
@@ -28,7 +28,7 @@
                     <li>Découvrir</li>
                     <li>Accès</li>
                     <li>A.M.A.V</li>
-                    <li><div class="button-nav">Visiter</div></li>
+                    <li><button class="button-nav">Visiter</button></li>
                     <li>FR | EN</li>
                 </ul>
             </div>
@@ -41,6 +41,7 @@
         <div class="section-col-anim">
             <section class="collection">
                 <h2>Notre collection</h2>
+                <hr size="4">
                 <div class="collection-content">
                     <img src="./assets/img/Un-siecle-d-histoire.jpg" alt="" />
                     <div class="collection-txt">
@@ -51,21 +52,22 @@
                             l'industrie automobile française sur près d'un
                             siècle.
                         </p>
-                        <div class="button">En savoir plus</div>
+                        <button class="savoir-button">En savoir plus</button>
                     </div>
                 </div>
             </section>
             <section class="animations">
                 <h2>Animations</h2>
+                <hr size="4">
                 <div class="animations-content">
-                    <img src="./assets/img/animation.jpg" alt="" />
+                    <img class="" src="./assets/img/animation.jpg" alt="" />
                     <div class="animation-txt">
                         <h4>Plus qu’une simple visite</h4>
                         <p>
                             Notre musée vous propose différentes animations,
                             idéales pour petits et grands !
                         </p>
-                        <div class="button">En savoir plus</div>
+                        <button class="savoir-button">En savoir plus</button>
                     </div>
                 </div>
             </section>
@@ -80,7 +82,7 @@
                         17 ans) : 5,00€ Famille (2 adultes et 2 jeunes) : 20,00
                         €
                     </p>
-                    <div class="button">En savoir plus</div>
+                    <button class="savoir-button">En savoir plus</button>
                 </div>
                 <div class="horraires">
                     <h3>Ouverture/Horaires</h3>
@@ -88,7 +90,7 @@
                         Avril/novembre 10h - 12h30 / 14h - 18h Juillet/août 10h
                         - 12h30 / 14h - 18h30
                     </p>
-                    <div class="button">En savoir Plus</div>
+                    <button class="savoir-button">En savoir plus</button>
                 </div>
             </div>
         </section>
@@ -123,7 +125,7 @@
                     Rassemblement de véhicules de collection. Disponible d’avril
                     à novembre 2022.
                 </p>
-                <div class="button">En savoir plus</div>
+                <button class="savoir-button">En savoir plus</button>
             </div>
             <div class="events">
                 <img src="./assets/img/evenements02.jpg" alt="" />
@@ -132,7 +134,7 @@
                     Venez découvrir la beauté d’anciens jouets à la salle des
                     fêtes, le 16 octobre 2022.
                 </p>
-                <div class="button">En savoir plus</div>
+                <button class="savoir-button">En savoir plus</button>
             </div>
             <div class="events">
                 <img src="./assets/img/evenements03.jpg" alt="" />
@@ -141,7 +143,7 @@
                     Visitez une exposition organisée par l’A.M.A.V, disponible
                     du 1er avril au 6 novembre 2022.
                 </p>
-                <div class="button">En savoir plus</div>
+                <button class="savoir-button">En savoir plus</button>
             </div>
         </section>
         <section class="section-asso">
@@ -154,7 +156,7 @@
                         Le but de cette association est de promouvoir, d’animer
                         et de valoriser le musée de l’Automobile de Valençay.
                     </p>
-                    <div class="button">En savoir plus</div>
+                    <button class="savoir-button">En savoir plus</button>
                 </div>
             </div>
         </section>
@@ -162,23 +164,29 @@
         <section class="section-galerie">
             <h2>Découvrez un siècle d’histoire en photos</h2>
             <div class="grid-galerie">
-                <img src="./assets/img/Galerie2CV.jpg" alt="" id="2CV" />
-                <img src="./assets/img/Galerie404.jpg" alt="" id="404" />
-                <img
-                    src="./assets/img/Galeriecitroen.jpg"
-                    alt=""
-                    id="citroen"
-                />
-                <img src="./assets/img/GalerieDS.jpg" alt="" id="DS" />
-                <img src="./assets/img/GalerieHerato.jpg" alt="" id="Herato" />
-                <img src="./assets/img/GalerieSel.jpg" alt="" id="Sel" />
-                <img
-                    src="./assets/img/GalerieZastava.jpg"
-                    alt=""
-                    id="Zastava"
-                />
+                <div class="div1">
+                   <img src="./assets/img/Galeriecitroen.jpg" alt="" id="citroen"/> 
+                </div>
+                <div class="div2">
+                    <img src="./assets/img/GalerieHerato.jpg" alt="" id="Herato" />
+                </div>
+                <div class="div3">
+                    <img src="./assets/img/GalerieDS.jpg" alt="" id="DS" />
+                </div>
+                <div class="div4">
+                    <img src="./assets/img/GalerieZastava.jpg" alt="" id="Zastava"/>
+                </div>
+                <div class="div5">
+                    <img src="./assets/img/GalerieSel.jpg" alt="" id="Sel" />
+                </div>
+                <div class="div6">
+                    <img src="./assets/img/Galerie404.jpg" alt="" id="404" />
+                </div>
+                <div class="div7">
+                    <img src="./assets/img/Galerie2CV.jpg" alt="" id="2CV" />
+                </div>  
             </div>
-            <div class="button">Découvrir</div>
+            <button class="decouvrir-button">Découvrir</div>
         </section>
         <section class="section-confiance">
             <h2>Ils nous font confiance</h2>
