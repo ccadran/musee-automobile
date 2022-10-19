@@ -418,7 +418,7 @@ h3:after {
 }
 
 footer {
-  background: #393e46;
+  background: #1e1e1e;
   color: #ffffff;
   padding: 60px 60px 0 60px;
 }
@@ -490,5 +490,27 @@ footer .under-footer ul li {
   margin: 100px 60px 50px 60px;
 }
 .section-acces h2 {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
+}
+.section-acces .grid-acces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "txt icons" "map map";
+}
+.section-acces .grid-acces p {
+  grid-area: txt;
+  width: 50%;
+}
+.section-acces .grid-acces ul {
+  grid-area: icons;
+  display: flex;
+}
+.section-acces .grid-acces ul li {
+  font-size: 2rem;
+}
+.section-acces .grid-acces iframe {
+  grid-area: map;
+  width: 80%;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

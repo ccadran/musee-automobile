@@ -1,6 +1,30 @@
 .section-acces {
     margin: 100px 60px 50px 60px;
     h2 {
-        margin-bottom: 70px;
+        margin-bottom: 100px;
+    }
+    .grid-acces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "txt icons"
+            "map map";
+        p {
+            grid-area: txt;
+            width: 50%;
+        }
+        ul {
+            grid-area: icons;
+            display: flex;
+            li {
+                font-size: 2rem;
+            }
+        }
+        iframe {
+            grid-area: map;
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 }
