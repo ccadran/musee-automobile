@@ -1,7 +1,12 @@
+.section-col-anim {
+    margin: 100px 60px;
+}
+
 .collection-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 50px 0;
 }
 
 .collection-txt {
@@ -14,15 +19,16 @@
 }
 
 section.collection {
-    margin: 50px 60px;
 }
-
+.animations {
+    margin: 0;
+}
 .animations-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 60px;
+    margin: 50px 0;
 }
 
 .animation-txt {
@@ -46,10 +52,6 @@ h2 {
         left: 0;
         width: 8%;
     }
-}
-
-.animations h2 {
-    margin-left: 60px;
 }
 
 .savoir-button {

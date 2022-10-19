@@ -190,6 +190,7 @@ header .header-content .header-content-txt i {
 .section-infos {
   background: #393e46;
   padding: 0 60px;
+  padding-top: 100px;
 }
 .section-infos h2 {
   font-family: librebaskerville-bold, serif;
@@ -284,17 +285,25 @@ header .header-content .header-content-txt i {
   margin-bottom: 100px;
 }
 .section-confiance .grid-partenaire {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.section-confiance .grid-partenaire img {
+  margin-left: 30px;
+}
+
+.section-col-anim {
+  margin: 100px 60px;
 }
 
 .collection-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 50px 0;
 }
 
 .collection-txt {
@@ -306,8 +315,8 @@ header .header-content .header-content-txt i {
   margin: 10px 0;
 }
 
-section.collection {
-  margin: 50px 60px;
+.animations {
+  margin: 0;
 }
 
 .animations-content {
@@ -315,7 +324,7 @@ section.collection {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 60px;
+  margin: 50px 0;
 }
 
 .animation-txt {
@@ -338,10 +347,6 @@ h2:after {
   bottom: -10px;
   left: 0;
   width: 8%;
-}
-
-.animations h2 {
-  margin-left: 60px;
 }
 
 .savoir-button {
@@ -500,4 +505,11 @@ footer .under-footer ul {
 footer .under-footer ul li {
   margin-left: 30px;
   border-bottom: 1px solid #ffffff;
+}
+
+.section-acces {
+  margin: 100px 60px 50px 60px;
+}
+.section-acces h2 {
+  margin-bottom: 70px;
 }/*# sourceMappingURL=index.css.map */
