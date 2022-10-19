@@ -473,6 +473,14 @@ footer .footer-content .footer-right .follow ul i {
   font-size: 4rem;
   padding-right: 60px;
 }
+footer .footer-content .footer-right .join-us {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-content .footer-right .join-us img {
+  width: 80%;
+  margin: 0 auto;
+}
 footer .under-footer {
   padding: 20px;
   font-family: satoshi-regular, sans-serif;
@@ -500,7 +508,7 @@ footer .under-footer ul li {
 }
 .section-acces .grid-acces p {
   grid-area: txt;
-  width: 50%;
+  width: 60%;
   font-weight: bold;
 }
 .section-acces .grid-acces ul {

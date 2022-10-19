@@ -57,6 +57,14 @@ footer {
                     }
                 }
             }
+            .join-us {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
         }
     }
     .under-footer {
