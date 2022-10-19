@@ -363,6 +363,24 @@ h2:after {
   cursor: pointer;
 }
 
+.section-galerie {
+  margin: 100px 60px 0 60px;
+}
+
+h3 {
+  position: relative;
+  margin-bottom: 100px;
+}
+h3:after {
+  position: absolute;
+  content: "";
+  background: #242424;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 8%;
+}
+
 .grid-wrapper > div {
   display: flex;
   justify-content: center;
