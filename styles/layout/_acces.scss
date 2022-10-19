@@ -3,6 +3,7 @@
     h2 {
         margin-bottom: 100px;
     }
+
     .grid-acces {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -28,6 +29,7 @@
             grid-area: map;
             width: 80%;
             margin: 0 auto;
+            margin-bottom: 150px;
         }
     }
 }
