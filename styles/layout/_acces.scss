@@ -6,19 +6,22 @@
     .grid-acces {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 30% 70%;
         grid-template-areas:
             "txt icons"
             "map map";
         p {
             grid-area: txt;
             width: 50%;
+            font-weight: bold;
         }
         ul {
             grid-area: icons;
             display: flex;
+            justify-content: flex-end;
             li {
-                font-size: 2rem;
+                font-size: 2.5rem;
+                margin-left: 70px;
             }
         }
         iframe {
