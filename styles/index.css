@@ -67,7 +67,6 @@ li {
 }
 
 header {
-  height: 90vh;
   background: url(/assets/img/Header\ main\ page.jpg) center/cover;
 }
 header .top-bar {
@@ -149,6 +148,7 @@ header .header-content .header-content-txt {
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 50px;
 }
 header .header-content .header-content-txt h5 {
   font-family: librebaskerville-bold, serif;
@@ -215,6 +215,9 @@ header .header-content .header-content-txt i {
   padding-bottom: 150px;
   justify-content: center;
 }
+.section-infos .tarifs-horaires button {
+  width: 150px;
+}
 .section-infos .tarifs-horaires p {
   font-family: satoshi-regular, sans-serif;
   font-size: 26px;
@@ -232,7 +235,13 @@ header .header-content .header-content-txt i {
   font-weight: bold;
   color: #ffffff;
 }
+.section-infos .tarifs-horaires h3:after {
+  display: none;
+}
 .section-infos .tarifs-horaires .tarifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-right: 50px;
   width: 40%;
   background: url(/assets/img/tarifs.jpg) center/cover;
@@ -245,6 +254,9 @@ header .header-content .header-content-txt i {
   margin-bottom: 70px;
 }
 .section-infos .tarifs-horaires .horaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: url(/assets/img/horraires.jpg) center/cover;
   width: 40%;
   padding: 80px 30px 35px 40px;
@@ -306,8 +318,13 @@ header .header-content .header-content-txt i {
   margin: 50px 0;
 }
 
+.collection-content img {
+  flex: 1;
+}
+
 .collection-txt {
   margin-left: 50px;
+  width: 50%;
 }
 
 .collection-txt h4,
@@ -326,9 +343,13 @@ header .header-content .header-content-txt i {
   align-items: center;
   margin: 50px 0;
 }
+.animations-content img {
+  flex: 1;
+}
 
 .animation-txt {
   width: 50%;
+  margin-right: 50px;
 }
 
 .animation-txt h4,
@@ -524,4 +545,115 @@ footer .under-footer ul li {
   grid-area: map;
   width: 80%;
   margin: 0 auto;
+}
+
+.association h2 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+  margin-left: 60px;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+
+.association h4 {
+  margin: 10px 0;
+}
+
+.savoir-button {
+  margin-top: 30px;
+  background: #f6c90e;
+  padding: 15px;
+  border: none;
+  font-family: satoshi-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.association-txt {
+  width: 50%;
+}
+
+.association img {
+  width: 517px;
+  height: 545px;
+  left: 75px;
+  top: 6496px;
+}
+
+.association-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.association-txt {
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events {
+  background-color: #393e46;
+}
+.events .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.events .container article {
+  width: 399px;
+  color: aliceblue;
+}
+.events .container article img {
+  height: 425px;
+  width: 399px;
+}
+.events hr {
+  width: 40px;
+  margin-bottom: px;
+}
+.events p {
+  width: 100%;
+  color: aliceblue;
+}
+.events .container_texte {
+  padding-right: 40px;
+}
+.events .img_container {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.events .titre {
+  font-size: 64px;
+  margin-left: 170px;
+  color: white;
+  padding-top: 100px;
+}
+.events .titre2 {
+  font-size: 32;
+}
+.events .sous-titre {
+  font-size: 26px;
+}
+.events .savoir-button {
+  margin-top: 30px;
+  background: #f6c90e;
+  padding: 15px;
+  border: none;
+  font-family: satoshi-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.events .savoir-button:hover {
+  cursor: pointer;
+}
+.events h4 {
+  font-size: 32px;
 }/*# sourceMappingURL=index.css.map */

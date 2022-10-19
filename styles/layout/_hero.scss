@@ -1,5 +1,4 @@
 header {
-    height: 90vh;
     background: url(/assets/img/Header\ main\ page.jpg) center/cover;
 
     .top-bar {
@@ -83,6 +82,7 @@ header {
             margin: 0 auto;
             text-align: center;
             color: $white;
+            margin-bottom: 50px;
             h5 {
                 @include h5;
                 margin-bottom: 25px;

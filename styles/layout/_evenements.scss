@@ -1,0 +1,70 @@
+.events {
+    background-color: #393e46;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container article {
+        width: 399px;
+        color: aliceblue;
+    }
+
+    .container article img {
+        height: 425px;
+        width: 399px;
+    }
+
+    hr {
+        width: 40px;
+        margin-bottom: px;
+    }
+
+    p {
+        width: 100%;
+        color: aliceblue;
+    }
+
+    .container_texte {
+        padding-right: 40px;
+    }
+
+    .img_container {
+        object-fit: cover;
+    }
+
+    .titre {
+        font-size: 64px;
+        margin-left: 170px;
+        color: white;
+        padding-top: 100px;
+    }
+
+    .titre2 {
+        font-size: 32;
+    }
+
+    .sous-titre {
+        font-size: 26px;
+    }
+
+    .savoir-button {
+        margin-top: 30px;
+        background: #f6c90e;
+        padding: 15px;
+        border: none;
+        font-family: satoshi-regular, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .savoir-button:hover {
+        cursor: pointer;
+    }
+    h4 {
+        font-size: 32px;
+    }
+}

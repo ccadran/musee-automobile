@@ -8,9 +8,13 @@
     align-items: center;
     margin: 50px 0;
 }
+.collection-content img {
+    flex: 1;
+}
 
 .collection-txt {
     margin-left: 50px;
+    width: 50%;
 }
 
 .collection-txt h4,
@@ -29,10 +33,14 @@ section.collection {
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
+    img {
+        flex: 1;
+    }
 }
 
 .animation-txt {
     width: 50%;
+    margin-right: 50px;
 }
 
 .animation-txt h4,
