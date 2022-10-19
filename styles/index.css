@@ -258,6 +258,7 @@ header .header-content .header-content-txt i {
 .section-confiance {
   padding: 0 60px;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .section-confiance h2 {
   font-family: librebaskerville-bold, serif;
@@ -430,4 +431,73 @@ h2:after {
 
 .section-events {
   margin: 0 60px;
+}
+
+footer {
+  background: #393e46;
+  color: #ffffff;
+  padding: 60px 60px 0 60px;
+}
+footer h4 {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+footer .footer-content {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 60px;
+  display: flex;
+}
+footer .footer-content .footer-left {
+  border-right: 1px solid #ffffff;
+  width: 50%;
+}
+footer .footer-content .footer-left li {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+footer .footer-content .footer-left .footer-left-top {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+}
+footer .footer-content .footer-left .footer-left-top .pages {
+  margin-right: 150px;
+}
+footer .footer-content .footer-left .footer-left-bottom {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+footer .footer-content .footer-right {
+  padding-left: 60px;
+}
+footer .footer-content .footer-right .follow {
+  width: 100%;
+  height: 50%;
+}
+footer .footer-content .footer-right .follow ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-right .follow ul i {
+  font-size: 4rem;
+  padding-right: 60px;
+}
+footer .under-footer {
+  padding: 20px;
+  font-family: satoshi-regular, sans-serif;
+}
+footer .under-footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer .under-footer ul li {
+  margin-left: 30px;
+  border-bottom: 1px solid #ffffff;
 }/*# sourceMappingURL=index.css.map */
