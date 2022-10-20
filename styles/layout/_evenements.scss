@@ -39,3 +39,21 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .evenements {
+        .events-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .events {
+                .img-container {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,9 @@ p {
 }
 .section-col-anim {
     margin: 100px 60px;
+    h2 {
+        margin-bottom: 35px;
+    }
 }
 
 .collection-content {
@@ -16,7 +19,7 @@ p {
     img {
         grid-area: img;
         object-fit: cover;
-        width: 100%;
+        width: 80%;
     }
 
     .btn-container {
@@ -30,7 +33,7 @@ p {
     }
     .collection-txt {
         margin-left: 50px;
-        width: 80%;
+        width: 100%;
         align-items: center;
         grid-area: txt;
     }
@@ -47,7 +50,7 @@ p {
         img {
             grid-area: img;
             object-fit: cover;
-            width: 100%;
+            width: 80%;
         }
 
         flex-direction: column;
@@ -55,11 +58,9 @@ p {
             align-self: flex-end;
             grid-area: txt;
             align-items: baseline;
-            margin-left: 50px;
         }
         .animation-txt {
-            margin-left: 50px;
-            width: 80%;
+            width: 100%;
             align-items: center;
             grid-area: txt;
         }
