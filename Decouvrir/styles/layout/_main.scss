@@ -9,12 +9,12 @@ main {
     .car-content {
         position: relative;
         h2 {
-            font-size: 400px;
-            position: absolute;
-            left: 30%;
-            top: 0;
-            line-height: 400px;
-            z-index: -5;
+            // font-size: 400px;
+            // position: absolute;
+            // left: 30%;
+            // top: 0;
+            // line-height: 400px;
+            // z-index: -5;
 
             &::after {
                 display: none;
@@ -27,9 +27,17 @@ main {
             display: grid;
             grid-template-columns: 5% 60% 35%;
             grid-template-rows: 40% 60%;
+
             grid-template-areas:
                 "side date date"
                 "side car txt";
+            .h2-container {
+                h2 {
+                    color: $black;
+                    grid-area: date;
+                    font-size: 400px;
+                }
+            }
         }
         .img-container {
             grid-area: car;

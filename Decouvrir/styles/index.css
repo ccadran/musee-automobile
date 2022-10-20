@@ -339,14 +339,6 @@ main h2::after {
 .aston-martin .car-content {
   position: relative;
 }
-.aston-martin .car-content h2 {
-  font-size: 400px;
-  position: absolute;
-  left: 30%;
-  top: 0;
-  line-height: 400px;
-  z-index: -5;
-}
 .aston-martin .car-content h2::after {
   display: none;
 }
@@ -356,6 +348,11 @@ main h2::after {
   grid-template-columns: 5% 60% 35%;
   grid-template-rows: 40% 60%;
   grid-template-areas: "side date date" "side car txt";
+}
+.aston-martin .car-content .grid-car .h2-container h2 {
+  color: #242424;
+  grid-area: date;
+  font-size: 400px;
 }
 .aston-martin .car-content .img-container {
   grid-area: car;
