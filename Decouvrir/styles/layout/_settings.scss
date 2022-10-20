@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "satoshi-regular";
+    src: url(/assets/fonts/satoshi-regular-webfont.woff)
+        url(/assets/fonts/satoshi-regular-webfont.woff2);
+}
+@font-face {
+    font-family: "librebaskerville-bold";
+    src: url(/assets/fonts/librebaskerville-bold-webfont.woff)
+        url(/assets/fonts/librebaskerville-bold-webfont.woff2);
+}
+
+$font1: librebaskerville-bold, serif;
+$font2: satoshi-regular, sans-serif;
+$black: #242424;
+$grey: #393e46;
+$yellow: #f6c90e;
+$white: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button {
+    margin-top: 30px;
+    background: #f6c90e;
+    padding: 15px;
+    border: none;
+    font-family: $font2;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+@mixin h1 {
+    font-family: $font1;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin h2 {
+    font-family: $font1;
+    font-size: 64px;
+    font-weight: bold;
+}
+@mixin h3 {
+    font-family: $font1;
+    font-size: 44px;
+    font-weight: bold;
+}
+@mixin h4 {
+    font-family: $font1;
+    font-size: 32px;
+    font-weight: bold;
+}
+@mixin h5 {
+    font-family: $font1;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin h6 {
+    font-family: $font1;
+    font-size: 28px;
+    font-weight: bold;
+}
+@mixin p {
+    font-family: $font2;
+    font-size: 26px;
+    font-weight: normal;
+}
+h2 {
+    @include h2;
+    &:after {
+        position: absolute;
+        content: "";
+        background: $black;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        width: 8%;
+    }
+}
+h4 {
+    @include h4;
+}
+h3 {
+    @include h3;
+}
+p {
+    @include p;
+}
+html {
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}

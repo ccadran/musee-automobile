@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(/assets/fonts/satoshi-regular-webfont.woff) url(/assets/fonts/satoshi-regular-webfont.woff2);
+}
+@font-face {
+  font-family: "librebaskerville-bold";
+  src: url(/assets/fonts/librebaskerville-bold-webfont.woff) url(/assets/fonts/librebaskerville-bold-webfont.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  margin-top: 30px;
+  background: #f6c90e;
+  padding: 15px;
+  border: none;
+  font-family: satoshi-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+h2:after {
+  position: absolute;
+  content: "";
+  background: #242424;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 8%;
+}
+
+h4 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+p {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #ffffff;
+  padding: 60px 60px 0 60px;
+}
+footer h4 {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+footer .footer-content {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 60px;
+  display: flex;
+}
+footer .footer-content .footer-left {
+  border-right: 1px solid #ffffff;
+  width: 50%;
+}
+footer .footer-content .footer-left li {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+footer .footer-content .footer-left .footer-left-top {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+}
+footer .footer-content .footer-left .footer-left-top .pages {
+  margin-right: 150px;
+}
+footer .footer-content .footer-left .footer-left-bottom {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+footer .footer-content .footer-right {
+  padding-left: 60px;
+}
+footer .footer-content .footer-right .follow {
+  width: 100%;
+  height: 50%;
+}
+footer .footer-content .footer-right .follow ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-right .follow ul i {
+  font-size: 4rem;
+  padding-right: 60px;
+}
+footer .footer-content .footer-right .join-us {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-content .footer-right .join-us img {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .under-footer {
+  padding: 20px;
+  font-family: satoshi-regular, sans-serif;
+}
+footer .under-footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer .under-footer ul li {
+  margin-left: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(/assets/fonts/satoshi-regular-webfont.woff) url(/assets/fonts/satoshi-regular-webfont.woff2);
+}
+@font-face {
+  font-family: "librebaskerville-bold";
+  src: url(/assets/fonts/librebaskerville-bold-webfont.woff) url(/assets/fonts/librebaskerville-bold-webfont.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  margin-top: 30px;
+  background: #f6c90e;
+  padding: 15px;
+  border: none;
+  font-family: satoshi-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+h2:after {
+  position: absolute;
+  content: "";
+  background: #242424;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 8%;
+}
+
+h4 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+p {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: url(/assets/img/Header\ main\ page.jpg) center/cover;
+}
+header .top-bar {
+  background: #393e46;
+}
+header .top-bar .top-bar-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 5px 0;
+}
+header .top-bar .top-bar-container h5 {
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .top-bar .top-bar-container ul {
+  display: flex;
+}
+header .top-bar .top-bar-container ul li {
+  margin-left: 14px;
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .nav-bar {
+  background: transparent;
+  margin-top: 50px;
+}
+header .nav-bar .nav-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+header .nav-bar .nav-bar-container img {
+  justify-content: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30px;
+}
+header .nav-bar .nav-bar-container ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  align-items: center;
+}
+header .nav-bar .nav-bar-container ul #button-visiter {
+  background: #f6c90e;
+  color: #242424;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 19px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+header .nav-bar .nav-bar-container ul li {
+  position: relative;
+}
+header .nav-bar .nav-bar-container ul :first-child:after {
+  position: absolute;
+  content: "";
+  background: #f6c90e;
+  height: 3px;
+  bottom: -10px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+}
+header .header-content {
+  margin-top: 150px;
+  display: flex;
+}
+header .header-content .header-content-txt {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+header .header-content .header-content-txt h5 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+}
+header .header-content .header-content-txt h5:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background: #f6c90e;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+header .header-content .header-content-txt h5:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background: #f6c90e;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+header .header-content .header-content-txt h1 {
+  font-family: librebaskerville-bold, serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+header .header-content .header-content-txt i {
+  font-size: 4rem;
+}
+
+main h2::after {
+  display: none;
+}
+
+.aston-martin .car-content {
+  position: relative;
+}
+.aston-martin .car-content h2 {
+  font-size: 400px;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  line-height: 400px;
+  z-index: -5;
+}
+.aston-martin .car-content h2::after {
+  display: none;
+}
+.aston-martin .car-content .grid-car {
+  margin: 200px 0;
+  display: grid;
+  grid-template-columns: 5% 60% 35%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: "side date date" "side car txt";
+}
+.aston-martin .car-content .img-container {
+  grid-area: car;
+}
+.aston-martin .car-content .img-container #aston {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 200%;
+  width: 100%;
+}
+.aston-martin #sidebar {
+  grid-area: side;
+}
+.aston-martin .car-txt {
+  grid-area: txt;
+}/*# sourceMappingURL=index.css.map */

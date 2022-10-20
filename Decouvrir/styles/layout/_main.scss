@@ -1,0 +1,50 @@
+main {
+    h2 {
+        &::after {
+            display: none;
+        }
+    }
+}
+.aston-martin {
+    .car-content {
+        position: relative;
+        h2 {
+            font-size: 400px;
+            position: absolute;
+            left: 30%;
+            top: 0;
+            line-height: 400px;
+            z-index: -5;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .car-content {
+        .grid-car {
+            margin: 200px 0;
+            display: grid;
+            grid-template-columns: 5% 60% 35%;
+            grid-template-rows: 40% 60%;
+            grid-template-areas:
+                "side date date"
+                "side car txt";
+        }
+        .img-container {
+            grid-area: car;
+            #aston {
+                object-fit: cover;
+                max-height: 200%;
+                width: 100%;
+            }
+        }
+    }
+    #sidebar {
+        grid-area: side;
+    }
+
+    .car-txt {
+        grid-area: txt;
+    }
+}
