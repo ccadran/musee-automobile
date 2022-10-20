@@ -85,6 +85,7 @@ h2 {
 }
 h4 {
     @include h4;
+    text-transform: uppercase;
 }
 h3 {
     @include h3;
@@ -97,4 +98,8 @@ html {
 }
 li {
     list-style: none;
+}
+h6 {
+    font-size: 28px;
+    font-family: $font1;
 }

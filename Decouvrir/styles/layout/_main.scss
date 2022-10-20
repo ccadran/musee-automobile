@@ -5,17 +5,33 @@ main {
         }
     }
 }
-.aston-martin {
+.collection {
     height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.aston-martin {
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .mustang {
-    height: 100vh;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .bmw {
-    height: 100vh;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .bugatti {
-    height: 100vh;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .car-content {
     position: relative;
@@ -30,6 +46,13 @@ main {
             "side car txt";
         .car-txt {
             grid-area: txt;
+
+            h4 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 40px;
+            }
         }
 
         .h2-container {
@@ -38,7 +61,7 @@ main {
             h2 {
                 color: $black;
                 grid-area: date;
-                top: -150px;
+                top: -100px;
                 position: absolute;
                 font-size: 500px;
 
@@ -47,6 +70,7 @@ main {
         }
     }
     .img-container {
+        animation: carslide 0.5s ease-in;
         grid-area: car;
         position: relative;
         :first-child {
@@ -59,3 +83,21 @@ main {
         }
     }
 }
+@keyframes carslide {
+    0% {
+        opacity: 0%;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+// @keyframes txt1 {
+//     0% {
+//         transform: translateY(-300px);
+//     }
+//     100% {
+//         transform: translateY(0);
+//     }
+// }

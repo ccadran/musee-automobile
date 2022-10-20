@@ -44,6 +44,7 @@ h4 {
   font-family: librebaskerville-bold, serif;
   font-size: 32px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -64,6 +65,11 @@ html {
 
 li {
   list-style: none;
+}
+
+h6 {
+  font-size: 28px;
+  font-family: librebaskerville-bold, serif;
 }
 
 footer {
@@ -189,6 +195,7 @@ h4 {
   font-family: librebaskerville-bold, serif;
   font-size: 32px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -211,8 +218,14 @@ li {
   list-style: none;
 }
 
+h6 {
+  font-size: 28px;
+  font-family: librebaskerville-bold, serif;
+}
+
 header {
   background: url(/assets/img/Header\ main\ page.jpg) center/cover;
+  height: 100vh;
 }
 header .top-bar {
   background: #393e46;
@@ -336,20 +349,38 @@ main h2::after {
   display: none;
 }
 
-.aston-martin {
+.collection {
   height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.collection::-webkit-scrollbar {
+  display: none;
+}
+
+.aston-martin {
+  height: 110vh;
+  scroll-snap-align: start;
+  margin-top: 50px;
 }
 
 .mustang {
-  height: 100vh;
+  height: 110vh;
+  scroll-snap-align: start;
+  margin-top: 50px;
 }
 
 .bmw {
-  height: 100vh;
+  height: 110vh;
+  scroll-snap-align: start;
+  margin-top: 50px;
 }
 
 .bugatti {
-  height: 100vh;
+  height: 110vh;
+  scroll-snap-align: start;
+  margin-top: 50px;
 }
 
 .car-content {
@@ -365,6 +396,12 @@ main h2::after {
 .car-content .grid-car .car-txt {
   grid-area: txt;
 }
+.car-content .grid-car .car-txt h4 {
+  margin-bottom: 30px;
+}
+.car-content .grid-car .car-txt p {
+  margin-bottom: 40px;
+}
 .car-content .grid-car .h2-container {
   grid-area: date;
   position: relative;
@@ -372,12 +409,14 @@ main h2::after {
 .car-content .grid-car .h2-container h2 {
   color: #242424;
   grid-area: date;
-  top: -150px;
+  top: -100px;
   position: absolute;
   font-size: 500px;
   z-index: -3;
 }
 .car-content .img-container {
+  -webkit-animation: carslide 0.5s ease-in;
+          animation: carslide 0.5s ease-in;
   grid-area: car;
   position: relative;
 }
@@ -389,4 +428,44 @@ main h2::after {
      object-fit: cover;
   max-height: 350%;
   width: 130%;
+}
+
+@-webkit-keyframes carslide {
+  0% {
+    opacity: 0%;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes carslide {
+  0% {
+    opacity: 0%;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+.all-container {
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.all-container header {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.all-container main {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+.all-container footer {
+  scroll-snap-align: start;
+  height: 100vh;
 }/*# sourceMappingURL=index.css.map */
