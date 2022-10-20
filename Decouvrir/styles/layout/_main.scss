@@ -6,16 +6,10 @@ main {
     }
 }
 .aston-martin {
+    height: 100vh;
     .car-content {
         position: relative;
         h2 {
-            // font-size: 400px;
-            // position: absolute;
-            // left: 30%;
-            // top: 0;
-            // line-height: 400px;
-            // z-index: -5;
-
             &::after {
                 display: none;
             }
@@ -27,15 +21,24 @@ main {
             display: grid;
             grid-template-columns: 5% 60% 35%;
             grid-template-rows: 40% 60%;
+            gap: 30px;
 
             grid-template-areas:
                 "side date date"
                 "side car txt";
             .h2-container {
+                grid-area: date;
+                position: relative;
                 h2 {
                     color: $black;
                     grid-area: date;
-                    font-size: 400px;
+                    font-size: 40px;
+                    position: absolute;
+                    font-size: 500px;
+                    top: -250px;
+                    left: 50px;
+
+                    z-index: -3;
                 }
             }
         }
@@ -43,16 +46,67 @@ main {
             grid-area: car;
             #aston {
                 object-fit: cover;
-                max-height: 200%;
-                width: 100%;
+                max-height: 300%;
+                width: 130%;
             }
         }
     }
     #sidebar {
         grid-area: side;
+        object-fit: cover;
+        width: 100%;
     }
 
     .car-txt {
         grid-area: txt;
+    }
+}
+
+.mustang {
+    height: 100vh;
+    .car-txt {
+        grid-area: txt;
+    }
+    .car-content {
+        position: relative;
+    }
+    #sidebar {
+        grid-area: side;
+        object-fit: cover;
+        width: 100%;
+        max-height: 300%;
+    }
+}
+.car-content {
+    .grid-car {
+        display: grid;
+        grid-template-columns: 5% 60% 35%;
+        grid-template-rows: 40% 60%;
+
+        grid-template-areas:
+            "side date date"
+            "side car txt";
+
+        .h2-container {
+            grid-area: date;
+            position: relative;
+            h2 {
+                color: $black;
+                grid-area: date;
+                font-size: 40px;
+                position: absolute;
+                font-size: 400px;
+                top: -200px;
+                z-index: -3;
+            }
+        }
+    }
+    .img-container {
+        grid-area: car;
+        #mustang {
+            object-fit: cover;
+            max-height: 200%;
+            width: 100%;
+        }
     }
 }
