@@ -1,13 +1,23 @@
+.galerie-container {
+    padding: 10px 60px 100px 60px;
+    background: $grey;
+}
+
 .section-galerie {
     margin: 100px 60px 0 60px;
 }
+
+.section-galerie h3 {
+    color: $white;
+}
+
 h3 {
     position: relative;
     margin-bottom: 100px;
     &:after {
         position: absolute;
         content: "";
-        background: $black;
+        background: $white;
         height: 3px;
         bottom: -10px;
         left: 0;
