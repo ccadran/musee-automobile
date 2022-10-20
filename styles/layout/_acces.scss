@@ -25,11 +25,49 @@
                 margin-left: 70px;
             }
         }
-        iframe {
+        .maps-content {
             grid-area: map;
-            width: 80%;
             margin: 0 auto;
-            margin-bottom: 150px;
+            width: 80%;
+            iframe {
+                margin-bottom: 150px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-acces {
+        .grid-acces {
+            grid-template-columns: 1fr;
+            grid-template-rows: 15% 15% 65%;
+            grid-template-areas:
+                "icons"
+                "address"
+                "maps";
+            p {
+                grid-area: address;
+            }
+            .icons {
+                ul {
+                    justify-content: space-around;
+                    grid-area: icons;
+                    li {
+                        margin-left: 0px;
+                    }
+                }
+                img {
+                    height: 0%;
+                }
+            }
+
+            .maps-content {
+                grid-area: maps;
+                iframe {
+                    width: 100%;
+                }
+            }
         }
     }
 }

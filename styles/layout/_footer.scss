@@ -52,7 +52,7 @@ footer {
                     display: flex;
                     justify-content: space-between;
                     i {
-                        font-size: 4rem;
+                        font-size: 2rem;
                         padding-right: 60px;
                     }
                 }
@@ -78,5 +78,30 @@ footer {
                 border-bottom: 1px solid $white;
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-left-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow ul li i {
+        margin: 10px 0;
+    }
+
+    .under-footer ul li {
+        font-size: 10px;
     }
 }
