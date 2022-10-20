@@ -139,6 +139,11 @@ header .nav-bar .nav-bar-container ul {
   text-transform: uppercase;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  header .nav-bar .nav-bar-container ul {
+    display: none;
+  }
+}
 header .nav-bar .nav-bar-container ul #button-visiter {
   background: #f6c90e;
   color: #242424;
@@ -187,6 +192,11 @@ header .header-content .header-content-txt h5:before {
   top: 50%;
   transform: translate(-110%, -50%);
 }
+@media screen and (max-width: 600px) {
+  header .header-content .header-content-txt h5:before {
+    width: 15%;
+  }
+}
 header .header-content .header-content-txt h5:after {
   content: "";
   position: absolute;
@@ -195,6 +205,11 @@ header .header-content .header-content-txt h5:after {
   background: #f6c90e;
   top: 50%;
   transform: translate(10%, -50%);
+}
+@media screen and (max-width: 600px) {
+  header .header-content .header-content-txt h5:after {
+    width: 15%;
+  }
 }
 header .header-content .header-content-txt h1 {
   font-family: librebaskerville-bold, serif;
@@ -461,12 +476,8 @@ h2:after {
   }
 }
 .galerie-container {
-  padding: 10px 60px 100px 60px;
+  padding: 80px 60px 100px 60px;
   background: #393e46;
-}
-
-.section-galerie {
-  margin: 100px 60px 0 60px;
 }
 
 .section-galerie h3 {

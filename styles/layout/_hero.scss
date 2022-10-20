@@ -50,6 +50,9 @@ header {
                 color: $white;
                 text-transform: uppercase;
                 align-items: center;
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
                 #button-visiter {
                     background: $yellow;
                     color: $black;
@@ -95,6 +98,9 @@ header {
                     background: $yellow;
                     top: 50%;
                     transform: translate(-110%, -50%);
+                    @media screen and (max-width: 600px) {
+                        width: 15%;
+                    }
                 }
                 &:after {
                     content: "";
@@ -104,6 +110,9 @@ header {
                     background: $yellow;
                     top: 50%;
                     transform: translate(10%, -50%);
+                    @media screen and (max-width: 600px) {
+                        width: 15%;
+                    }
                 }
             }
             h1 {
