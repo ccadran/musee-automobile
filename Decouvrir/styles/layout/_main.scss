@@ -17,21 +17,50 @@ main {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    .h2-container {
+        h2 {
+            color: #383938;
+        }
+    }
+    h6 {
+        color: #383938;
+    }
 }
 .mustang {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    .h2-container {
+        color: #0d4d79;
+        opacity: 70%;
+    }
+    h6 {
+        color: #0d4d79;
+    }
 }
 .bmw {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    .h2-container {
+        color: #531010;
+        opacity: 70%;
+    }
+    h6 {
+        color: #531010;
+    }
 }
 .bugatti {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    .h2-container {
+        color: #ff6413;
+        opacity: 70%;
+    }
+    h6 {
+        color: #ff6413;
+    }
 }
 .car-content {
     position: relative;
@@ -59,11 +88,11 @@ main {
             grid-area: date;
             position: relative;
             h2 {
-                color: $black;
                 grid-area: date;
                 top: -100px;
                 position: absolute;
                 font-size: 500px;
+                left: -50px;
 
                 z-index: -3;
             }
@@ -76,7 +105,7 @@ main {
         :first-child {
             position: absolute;
             top: -30px;
-            left: -30px;
+            left: -80px;
             object-fit: cover;
             max-height: 350%;
             width: 130%;
