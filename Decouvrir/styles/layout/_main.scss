@@ -38,6 +38,11 @@ main {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    &:hover {
+        img {
+            animation: carslide 0.7s ease-in-out forwards;
+        }
+    }
     .h2-container {
         h2 {
             color: #383938;
@@ -51,6 +56,11 @@ main {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    &:hover {
+        img {
+            animation: carslide 0.7s ease-in-out forwards;
+        }
+    }
     .h2-container {
         color: #0d4d79;
         opacity: 70%;
@@ -63,6 +73,11 @@ main {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    &:hover {
+        img {
+            animation: carslide 0.7s ease-in-out forwards;
+        }
+    }
     .h2-container {
         color: #531010;
         opacity: 70%;
@@ -75,6 +90,11 @@ main {
     height: 110vh;
     scroll-snap-align: start;
     margin-top: 50px;
+    &:hover {
+        img {
+            animation: carslide 0.7s ease-in-out forwards;
+        }
+    }
     .h2-container {
         color: #ff6413;
         opacity: 70%;
@@ -126,7 +146,7 @@ main {
         :first-child {
             position: absolute;
             top: -30px;
-            left: -80px;
+            left: -1200px;
             object-fit: cover;
             max-height: 350%;
             width: 130%;
@@ -136,11 +156,11 @@ main {
 @keyframes carslide {
     0% {
         opacity: 0%;
-        transform: translateY(300px);
+        transform: translateX(-700px);
     }
     100% {
         opacity: 100%;
-        transform: translateY(0);
+        transform: translateX(1100px);
     }
 }
 // @keyframes txt1 {

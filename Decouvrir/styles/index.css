@@ -452,6 +452,10 @@ main h2::after {
   scroll-snap-align: start;
   margin-top: 50px;
 }
+.aston-martin:hover img {
+  -webkit-animation: carslide 0.7s ease-in-out forwards;
+          animation: carslide 0.7s ease-in-out forwards;
+}
 .aston-martin .h2-container h2 {
   color: #383938;
 }
@@ -463,6 +467,10 @@ main h2::after {
   height: 110vh;
   scroll-snap-align: start;
   margin-top: 50px;
+}
+.mustang:hover img {
+  -webkit-animation: carslide 0.7s ease-in-out forwards;
+          animation: carslide 0.7s ease-in-out forwards;
 }
 .mustang .h2-container {
   color: #0d4d79;
@@ -477,6 +485,10 @@ main h2::after {
   scroll-snap-align: start;
   margin-top: 50px;
 }
+.bmw:hover img {
+  -webkit-animation: carslide 0.7s ease-in-out forwards;
+          animation: carslide 0.7s ease-in-out forwards;
+}
 .bmw .h2-container {
   color: #531010;
   opacity: 70%;
@@ -489,6 +501,10 @@ main h2::after {
   height: 110vh;
   scroll-snap-align: start;
   margin-top: 50px;
+}
+.bugatti:hover img {
+  -webkit-animation: carslide 0.7s ease-in-out forwards;
+          animation: carslide 0.7s ease-in-out forwards;
 }
 .bugatti .h2-container {
   color: #ff6413;
@@ -538,7 +554,7 @@ main h2::after {
 .car-content .img-container :first-child {
   position: absolute;
   top: -30px;
-  left: -80px;
+  left: -1200px;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 350%;
@@ -548,22 +564,22 @@ main h2::after {
 @-webkit-keyframes carslide {
   0% {
     opacity: 0%;
-    transform: translateY(300px);
+    transform: translateX(-700px);
   }
   100% {
     opacity: 100%;
-    transform: translateY(0);
+    transform: translateX(1100px);
   }
 }
 
 @keyframes carslide {
   0% {
     opacity: 0%;
-    transform: translateY(300px);
+    transform: translateX(-700px);
   }
   100% {
     opacity: 100%;
-    transform: translateY(0);
+    transform: translateX(1100px);
   }
 }
 .all-container {
