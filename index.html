@@ -15,7 +15,11 @@
         <header>
             <div class="top-bar" id="back-top">
                 <div class="top-bar-container">
-                    <h5>Ouvert de 8h à 19h</h5>
+                    <div class="open-container">
+                        <i class="fa-regular fa-clock"></i>
+
+                        <h5>Ouvert de 8h à 19h</h5>
+                    </div>
                     <ul>
                         <li>12, avenue de la Résistance 36600 VALENCAY |</li>
                         <li>+33 5 66 91 78 12 |</li>
@@ -23,22 +27,41 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-bar">
-                <div class="nav-bar-container">
+            <nav class="nav-bar" id="navbar">
+                <div class="nav-bar-container" id="sub-nav">
                     <img
                         src="./assets/img/logo-jaune.png"
                         alt="logo du musée de l'automobile"
                     />
-                    <ul>
+                    <ul class="list-items">
                         <li>Accueil</li>
-                        <li>Découvrir</li>
+                        <li>
+                            <a href="/Decouvrir/decouvri.html">Découvrir</a>
+                        </li>
                         <li>Accès</li>
                         <li>A.M.A.V</li>
                         <li id="button-visiter">Visiter</li>
                         <li>FR | EN</li>
                     </ul>
                 </div>
-            </div>
+                <div class="mobile-menu" id="menu">
+                    <img
+                        src="./assets/img/logo-jaune.png"
+                        alt="logo du musée de l'automobile"
+                    />
+                    <a class="open" href="#menu">☰</a>
+                    <a class="close" href="#">✖</a>
+                    <ul class="list-items-mobile" id="mobile-items">
+                        <li>Accueil</li>
+                        <li>Découvrir</li>
+                        <li>Accès</li>
+                        <li>A.M.A.V</li>
+                        <li id="button-visiter">Visiter</li>
+                        <li>Contact</li>
+                        <li>FR | EN</li>
+                    </ul>
+                </div>
+            </nav>
             <div class="header-content">
                 <div class="header-content-txt">
                     <h5>Venez découvrir</h5>
@@ -427,5 +450,16 @@
                 </div>
             </footer>
         </main>
+        <script>
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector(".nav-bar");
+
+                if (window.scrollY > 0) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            });
+        </script>
     </body>
 </html>

@@ -9,6 +9,27 @@ main {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    #push-up {
+        position: fixed;
+        color: $black;
+        right: 10px;
+        bottom: 50px;
+        background: $yellow;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        transition: 0.15s;
+        &:hover {
+            height: 65px;
+            width: 65px;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
     &::-webkit-scrollbar {
         display: none;
     }

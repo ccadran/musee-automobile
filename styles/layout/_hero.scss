@@ -10,6 +10,14 @@ header {
             margin: 0 auto;
             color: $white;
             padding: 5px 0;
+            .open-container {
+                display: flex;
+                align-items: center;
+                i {
+                    color: #65ed7a;
+                    margin-right: 5px;
+                }
+            }
 
             h5 {
                 font-family: $font2;
@@ -29,12 +37,41 @@ header {
     }
     .nav-bar {
         background: transparent;
-        margin-top: 50px;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        transition: top 0.5s ease-in-out;
+        a {
+            color: $white;
+            &::after {
+                display: none;
+            }
+        }
+        &.sticky {
+            z-index: 9999;
+            top: 0;
+            box-shadow: 5px 5px 77px rgba(255, 255, 255, 0.1);
+            -webkit-box-shadow: 5px 5px 77px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 5px 5px 77px rgba(0, 0, 0, 0.1);
+            .nav-bar-container {
+                background: white;
+                align-items: center;
+
+                li,
+                a {
+                    color: black;
+                }
+            }
+        }
+
         .nav-bar-container {
-            width: 90%;
+            width: 100%;
+            padding-left: 30px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 30% 70%;
+            height: 70px;
 
             img {
                 justify-content: left;
@@ -50,9 +87,7 @@ header {
                 color: $white;
                 text-transform: uppercase;
                 align-items: center;
-                @media screen and (max-width: 600px) {
-                    display: none;
-                }
+
                 #button-visiter {
                     background: $yellow;
                     color: $black;
@@ -79,9 +114,6 @@ header {
                     width: 50%;
                     transform: translateX(-50%);
                 }
-                #button-visiter {
-                }
-
                 :nth-child(2):hover::after {
                     position: absolute;
                     transition: 5s;
@@ -167,5 +199,115 @@ header {
                 font-size: 4rem;
             }
         }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        margin-top: 0;
+
+        &.sticky .mobile-menu {
+            background: white;
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    header .nav-bar .nav-bar-container {
+        display: none;
+    }
+
+    .nav-bar .nav-bar-container .list-items li,
+    .nav-bar .nav-bar-container img {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu ul li {
+        color: white;
+        padding: 10px;
+    }
+
+    .mobile-menu img {
+        height: 30px;
+        margin-left: 30px;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+    /* État fermé */
+    .mobile-menu .close {
+        display: none;
+    }
+    .mobile-menu ul {
+        display: none;
+    }
+
+    /* État ouvert */
+    .mobile-menu:target .close {
+        display: block;
+    }
+    .mobile-menu:target .open {
+        display: none;
+        position: fixed;
+    }
+    .mobile-menu:target ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu .close {
+        position: fixed;
+        right: 0;
+        z-index: 9999;
+        margin-right: 30px;
+    }
+
+    .list-items-mobile {
+        background: $grey;
+        color: white;
+        position: fixed;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 70px;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        z-index: 9998;
+        font-family: $font2;
+        @include p;
+    }
+
+    .top-bar-container ul li {
+        display: none;
+    }
+
+    .top-bar-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-content .header-content-txt h5 {
+        z-index: 0;
     }
 }

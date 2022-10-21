@@ -12,7 +12,14 @@ header {
             margin: 0 auto;
             color: $white;
             padding: 5px 0;
-
+            .open-container {
+                display: flex;
+                align-items: center;
+                i {
+                    color: #65ed7a;
+                    margin-right: 5px;
+                }
+            }
             h5 {
                 font-family: $font2;
                 font-weight: bold;
@@ -59,12 +66,56 @@ header {
                     font-size: 19px;
                     padding: 5px 15px;
                     text-transform: uppercase;
+                    transition: 0.15s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
                 }
                 li {
                     position: relative;
+                    cursor: pointer;
+                    a {
+                        color: $white;
+                    }
                 }
-                :first-child:after {
+                :nth-child(2):after {
                     position: absolute;
+                    content: "";
+                    background: $yellow;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 50%;
+                    transform: translateX(-50%);
+                }
+                :nth-child(1):hover::after {
+                    position: absolute;
+                    transition: 5s;
+
+                    content: "";
+                    background: $yellow;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 50%;
+                    transform: translateX(-50%);
+                }
+                :nth-child(3):hover::after {
+                    position: absolute;
+                    transition: 5s;
+
+                    content: "";
+                    background: $yellow;
+                    height: 3px;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 50%;
+                    transform: translateX(-50%);
+                }
+                :nth-child(4):hover::after {
+                    position: absolute;
+                    transition: 5s;
+
                     content: "";
                     background: $yellow;
                     height: 3px;
