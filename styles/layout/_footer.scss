@@ -2,6 +2,15 @@ footer {
     background: #1e1e1e;
     color: $white;
     padding: 60px 60px 0 60px;
+    ul {
+    }
+    li {
+        transition: 0.15s;
+        &:hover {
+            opacity: 70%;
+            cursor: pointer;
+        }
+    }
 
     h4 {
         font-family: $font2;

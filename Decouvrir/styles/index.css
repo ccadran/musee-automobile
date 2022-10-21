@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: none;
+  text-decoration: none;
+}
+
 .button {
   margin-top: 30px;
   background: #f6c90e;
@@ -20,9 +25,13 @@
   font-family: satoshi-regular, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  transition: 0.15s;
 }
+
 .button:hover {
   cursor: pointer;
+  transform: scale(1.15);
+  background: #242424;
 }
 
 h2 {
@@ -163,6 +172,11 @@ footer .under-footer ul li {
   box-sizing: border-box;
 }
 
+a {
+  color: none;
+  text-decoration: none;
+}
+
 .button {
   margin-top: 30px;
   background: #f6c90e;
@@ -171,9 +185,13 @@ footer .under-footer ul li {
   font-family: satoshi-regular, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  transition: 0.15s;
 }
+
 .button:hover {
   cursor: pointer;
+  transform: scale(1.15);
+  background: #242424;
 }
 
 h2 {

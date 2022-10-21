@@ -3,9 +3,14 @@ p {
     margin: 20px 0;
 }
 .section-col-anim {
-    margin: 100px 60px;
+    margin: 100px 100px;
     h2 {
         margin-bottom: 35px;
+    }
+    #push-up {
+        position: fixed;
+
+        color: $black;
     }
 }
 
@@ -41,6 +46,7 @@ p {
 
 .animations {
     margin: 0;
+    margin-top: 70px;
     .animations-content {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -51,6 +57,7 @@ p {
             grid-area: img;
             object-fit: cover;
             width: 80%;
+            margin-left: 50px;
         }
 
         flex-direction: column;

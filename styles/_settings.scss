@@ -21,6 +21,11 @@ $white: #ffffff;
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    color: none;
+    text-decoration: none;
+    color: $black;
+}
 .button {
     margin-top: 30px;
     background: #f6c90e;
@@ -29,9 +34,16 @@ $white: #ffffff;
     font-family: $font2;
     text-transform: uppercase;
     font-weight: 700;
-
-    &:hover {
-        cursor: pointer;
+    transition: 0.15s;
+    i {
+        transition: 0.15s;
+    }
+}
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    i {
+        padding-left: 10px;
     }
 }
 @mixin h1 {
