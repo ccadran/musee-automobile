@@ -409,6 +409,23 @@ p {
 .section-col-anim #push-up {
   position: fixed;
   color: #242424;
+  right: 10px;
+  bottom: 50px;
+  background: #f6c90e;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  transition: 0.15s;
+}
+.section-col-anim #push-up:hover {
+  height: 65px;
+  width: 65px;
+}
+.section-col-anim #push-up i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .collection-content {
