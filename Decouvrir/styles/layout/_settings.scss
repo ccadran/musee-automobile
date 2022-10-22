@@ -80,13 +80,7 @@ a {
 h2 {
     @include h2;
     &:after {
-        position: absolute;
-        content: "";
-        background: $black;
-        height: 3px;
-        bottom: -10px;
-        left: 0;
-        width: 8%;
+        display: none;
     }
 }
 h4 {

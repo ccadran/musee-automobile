@@ -1,14 +1,13 @@
-main {
-    h2 {
-        &::after {
-            display: none;
-        }
-    }
+// .collection {
+//     height: 100vh;
+//     scroll-snap-type: y mandatory;
+//     overflow-y: scroll;
+
+&::-webkit-scrollbar {
+    display: none;
 }
-.collection {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+
+.aston-martin {
     #push-up {
         position: fixed;
         color: $black;
@@ -30,14 +29,6 @@ main {
             transform: translate(-50%, -50%);
         }
     }
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
-.aston-martin {
-    height: 110vh;
-    scroll-snap-align: start;
-    margin-top: 50px;
     &:hover {
         img {
             animation: carslide 0.7s ease-in-out forwards;
@@ -53,9 +44,6 @@ main {
     }
 }
 .mustang {
-    height: 110vh;
-    scroll-snap-align: start;
-    margin-top: 50px;
     &:hover {
         img {
             animation: carslide 0.7s ease-in-out forwards;
@@ -70,9 +58,6 @@ main {
     }
 }
 .bmw {
-    height: 110vh;
-    scroll-snap-align: start;
-    margin-top: 50px;
     &:hover {
         img {
             animation: carslide 0.7s ease-in-out forwards;
@@ -87,9 +72,6 @@ main {
     }
 }
 .bugatti {
-    height: 110vh;
-    scroll-snap-align: start;
-    margin-top: 50px;
     &:hover {
         img {
             animation: carslide 0.7s ease-in-out forwards;

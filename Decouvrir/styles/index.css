@@ -1,602 +1,588 @@
 @font-face {
-  font-family: "satoshi-regular";
-  src: url(/assets/fonts/satoshi-regular-webfont.woff) url(/assets/fonts/satoshi-regular-webfont.woff2);
+    font-family: "satoshi-regular";
+    src: url(/assets/fonts/satoshi-regular-webfont.woff)
+        url(/assets/fonts/satoshi-regular-webfont.woff2);
 }
 @font-face {
-  font-family: "librebaskerville-bold";
-  src: url(/assets/fonts/librebaskerville-bold-webfont.woff) url(/assets/fonts/librebaskerville-bold-webfont.woff2);
+    font-family: "librebaskerville-bold";
+    src: url(/assets/fonts/librebaskerville-bold-webfont.woff)
+        url(/assets/fonts/librebaskerville-bold-webfont.woff2);
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-  color: none;
-  text-decoration: none;
+    color: none;
+    text-decoration: none;
 }
 
 .button {
-  margin-top: 30px;
-  background: #f6c90e;
-  padding: 15px;
-  border: none;
-  font-family: satoshi-regular, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: 0.15s;
+    margin-top: 30px;
+    background: #f6c90e;
+    padding: 15px;
+    border: none;
+    font-family: satoshi-regular, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.15s;
 }
 
 .button:hover {
-  cursor: pointer;
-  transform: scale(1.15);
-  background: #242424;
+    cursor: pointer;
+    transform: scale(1.15);
+    background: #242424;
 }
 
 h2 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 64px;
-  font-weight: bold;
-}
-h2:after {
-  position: absolute;
-  content: "";
-  background: #242424;
-  height: 3px;
-  bottom: -10px;
-  left: 0;
-  width: 8%;
+    font-family: librebaskerville-bold, serif;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 h4 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-family: librebaskerville-bold, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 44px;
-  font-weight: bold;
+    font-family: librebaskerville-bold, serif;
+    font-size: 44px;
+    font-weight: bold;
 }
 
 p {
-  font-family: satoshi-regular, sans-serif;
-  font-size: 26px;
-  font-weight: normal;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 26px;
+    font-weight: normal;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 h6 {
-  font-size: 28px;
-  font-family: librebaskerville-bold, serif;
+    font-size: 28px;
+    font-family: librebaskerville-bold, serif;
 }
 
 footer {
-  background: #1e1e1e;
-  color: #ffffff;
-  padding: 60px 60px 0 60px;
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 60px 60px 0 60px;
 }
 footer h4 {
-  font-family: satoshi-regular, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 footer .footer-content {
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 60px;
-  display: flex;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 60px;
+    display: flex;
 }
 footer .footer-content .footer-left {
-  border-right: 1px solid #ffffff;
-  width: 50%;
+    border-right: 1px solid #ffffff;
+    width: 50%;
 }
 footer .footer-content .footer-left li {
-  font-family: satoshi-regular, sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  text-transform: uppercase;
-  padding: 15px 0;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px 0;
 }
 footer .footer-content .footer-left .footer-left-top {
-  display: flex;
-  height: 50%;
-  justify-content: center;
+    display: flex;
+    height: 50%;
+    justify-content: center;
 }
 footer .footer-content .footer-left .footer-left-top .pages {
-  margin-right: 150px;
+    margin-right: 150px;
 }
 footer .footer-content .footer-left .footer-left-bottom {
-  display: flex;
-  margin-top: 100px;
-  justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
 }
 footer .footer-content .footer-right {
-  padding-left: 60px;
+    padding-left: 60px;
 }
 footer .footer-content .footer-right .follow {
-  width: 100%;
-  height: 50%;
+    width: 100%;
+    height: 50%;
 }
 footer .footer-content .footer-right .follow ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 footer .footer-content .footer-right .follow ul i {
-  font-size: 4rem;
-  padding-right: 60px;
+    font-size: 4rem;
+    padding-right: 60px;
 }
 footer .footer-content .footer-right .join-us {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 footer .footer-content .footer-right .join-us img {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 footer .under-footer {
-  padding: 20px;
-  font-family: satoshi-regular, sans-serif;
+    padding: 20px;
+    font-family: satoshi-regular, sans-serif;
 }
 footer .under-footer ul {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 footer .under-footer ul li {
-  margin-left: 30px;
-  border-bottom: 1px solid #ffffff;
+    margin-left: 30px;
+    border-bottom: 1px solid #ffffff;
 }
 
 @font-face {
-  font-family: "satoshi-regular";
-  src: url(/assets/fonts/satoshi-regular-webfont.woff) url(/assets/fonts/satoshi-regular-webfont.woff2);
+    font-family: "satoshi-regular";
+    src: url(/assets/fonts/satoshi-regular-webfont.woff)
+        url(/assets/fonts/satoshi-regular-webfont.woff2);
 }
 @font-face {
-  font-family: "librebaskerville-bold";
-  src: url(/assets/fonts/librebaskerville-bold-webfont.woff) url(/assets/fonts/librebaskerville-bold-webfont.woff2);
+    font-family: "librebaskerville-bold";
+    src: url(/assets/fonts/librebaskerville-bold-webfont.woff)
+        url(/assets/fonts/librebaskerville-bold-webfont.woff2);
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-  color: none;
-  text-decoration: none;
+    color: none;
+    text-decoration: none;
 }
 
 .button {
-  margin-top: 30px;
-  background: #f6c90e;
-  padding: 15px;
-  border: none;
-  font-family: satoshi-regular, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: 0.15s;
+    margin-top: 30px;
+    background: #f6c90e;
+    padding: 15px;
+    border: none;
+    font-family: satoshi-regular, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.15s;
 }
 
 .button:hover {
-  cursor: pointer;
-  transform: scale(1.15);
-  background: #242424;
+    cursor: pointer;
+    transform: scale(1.15);
+    background: #242424;
 }
 
 h2 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 64px;
-  font-weight: bold;
-}
-h2:after {
-  position: absolute;
-  content: "";
-  background: #242424;
-  height: 3px;
-  bottom: -10px;
-  left: 0;
-  width: 8%;
+    font-family: librebaskerville-bold, serif;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 h4 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-family: librebaskerville-bold, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 44px;
-  font-weight: bold;
+    font-family: librebaskerville-bold, serif;
+    font-size: 44px;
+    font-weight: bold;
 }
 
 p {
-  font-family: satoshi-regular, sans-serif;
-  font-size: 26px;
-  font-weight: normal;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 26px;
+    font-weight: normal;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 h6 {
-  font-size: 28px;
-  font-family: librebaskerville-bold, serif;
+    font-size: 28px;
+    font-family: librebaskerville-bold, serif;
 }
 
 header {
-  background: url(/assets/img/Header\ main\ page.jpg) center/cover;
-  height: 100vh;
+    background: url(/assets/img/Header\ main\ page.jpg) center/cover;
+    height: 100vh;
 }
 header .top-bar {
-  background: #393e46;
+    background: #393e46;
 }
 header .top-bar .top-bar-container {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  color: #ffffff;
-  padding: 5px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 5px 0;
 }
 header .top-bar .top-bar-container .open-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 header .top-bar .top-bar-container .open-container i {
-  color: #65ed7a;
-  margin-right: 5px;
+    color: #65ed7a;
+    margin-right: 5px;
 }
 header .top-bar .top-bar-container h5 {
-  font-family: satoshi-regular, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+    font-family: satoshi-regular, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
 header .top-bar .top-bar-container ul {
-  display: flex;
+    display: flex;
 }
 header .top-bar .top-bar-container ul li {
-  margin-left: 14px;
-  font-family: satoshi-regular, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
+    margin-left: 14px;
+    font-family: satoshi-regular, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
 header .nav-bar {
-  background: transparent;
-  margin-top: 50px;
+    background: transparent;
+    margin-top: 50px;
 }
 header .nav-bar .nav-bar-container {
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 30% 70%;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 header .nav-bar .nav-bar-container img {
-  justify-content: left;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 30px;
+    justify-content: left;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 30px;
 }
 header .nav-bar .nav-bar-container ul {
-  display: flex;
-  justify-content: space-around;
-  font-family: satoshi-regular, sans-serif;
-  font-size: 19px;
-  color: #ffffff;
-  text-transform: uppercase;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+    text-transform: uppercase;
+    align-items: center;
 }
 header .nav-bar .nav-bar-container ul #button-visiter {
-  background: #f6c90e;
-  color: #242424;
-  font-family: satoshi-regular, sans-serif;
-  font-size: 19px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  transition: 0.15s;
+    background: #f6c90e;
+    color: #242424;
+    font-family: satoshi-regular, sans-serif;
+    font-size: 19px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: 0.15s;
 }
 header .nav-bar .nav-bar-container ul #button-visiter:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 header .nav-bar .nav-bar-container ul li {
-  position: relative;
-  cursor: pointer;
+    position: relative;
+    cursor: pointer;
 }
 header .nav-bar .nav-bar-container ul li a {
-  color: #ffffff;
+    color: #ffffff;
 }
 header .nav-bar .nav-bar-container ul :nth-child(2):after {
-  position: absolute;
-  content: "";
-  background: #f6c90e;
-  height: 3px;
-  bottom: -10px;
-  left: 50%;
-  width: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    content: "";
+    background: #f6c90e;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
 }
 header .nav-bar .nav-bar-container ul :nth-child(1):hover::after {
-  position: absolute;
-  transition: 5s;
-  content: "";
-  background: #f6c90e;
-  height: 3px;
-  bottom: -10px;
-  left: 50%;
-  width: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    transition: 5s;
+    content: "";
+    background: #f6c90e;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
 }
 header .nav-bar .nav-bar-container ul :nth-child(3):hover::after {
-  position: absolute;
-  transition: 5s;
-  content: "";
-  background: #f6c90e;
-  height: 3px;
-  bottom: -10px;
-  left: 50%;
-  width: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    transition: 5s;
+    content: "";
+    background: #f6c90e;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
 }
 header .nav-bar .nav-bar-container ul :nth-child(4):hover::after {
-  position: absolute;
-  transition: 5s;
-  content: "";
-  background: #f6c90e;
-  height: 3px;
-  bottom: -10px;
-  left: 50%;
-  width: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    transition: 5s;
+    content: "";
+    background: #f6c90e;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
 }
 header .header-content {
-  margin-top: 150px;
-  display: flex;
+    margin-top: 150px;
+    display: flex;
 }
 header .header-content .header-content-txt {
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 50px;
 }
 header .header-content .header-content-txt h5 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-  position: relative;
+    font-family: librebaskerville-bold, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
 }
 header .header-content .header-content-txt h5:before {
-  content: "";
-  position: absolute;
-  width: 25%;
-  height: 3px;
-  background: #f6c90e;
-  top: 50%;
-  transform: translate(-110%, -50%);
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background: #f6c90e;
+    top: 50%;
+    transform: translate(-110%, -50%);
 }
 header .header-content .header-content-txt h5:after {
-  content: "";
-  position: absolute;
-  width: 25%;
-  height: 3px;
-  background: #f6c90e;
-  top: 50%;
-  transform: translate(10%, -50%);
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background: #f6c90e;
+    top: 50%;
+    transform: translate(10%, -50%);
 }
 header .header-content .header-content-txt h1 {
-  font-family: librebaskerville-bold, serif;
-  font-size: 64px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 130px;
+    font-family: librebaskerville-bold, serif;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 130px;
 }
 header .header-content .header-content-txt i {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 main h2::after {
-  display: none;
+    display: none;
 }
 
 .collection {
-  height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+    height: 100vh;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 .collection #push-up {
-  position: fixed;
-  color: #242424;
-  right: 10px;
-  bottom: 50px;
-  background: #f6c90e;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  transition: 0.15s;
+    position: fixed;
+    color: #242424;
+    right: 10px;
+    bottom: 50px;
+    background: #f6c90e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transition: 0.15s;
 }
 .collection #push-up:hover {
-  height: 65px;
-  width: 65px;
+    height: 65px;
+    width: 65px;
 }
 .collection #push-up i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .collection::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .aston-martin {
-  height: 110vh;
-  scroll-snap-align: start;
-  margin-top: 50px;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .aston-martin:hover img {
-  -webkit-animation: carslide 0.7s ease-in-out forwards;
-          animation: carslide 0.7s ease-in-out forwards;
+    -webkit-animation: carslide 0.7s ease-in-out forwards;
+    animation: carslide 0.7s ease-in-out forwards;
 }
 .aston-martin .h2-container h2 {
-  color: #383938;
+    color: #383938;
 }
 .aston-martin h6 {
-  color: #383938;
+    color: #383938;
 }
 
 .mustang {
-  height: 110vh;
-  scroll-snap-align: start;
-  margin-top: 50px;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .mustang:hover img {
-  -webkit-animation: carslide 0.7s ease-in-out forwards;
-          animation: carslide 0.7s ease-in-out forwards;
+    -webkit-animation: carslide 0.7s ease-in-out forwards;
+    animation: carslide 0.7s ease-in-out forwards;
 }
 .mustang .h2-container {
-  color: #0d4d79;
-  opacity: 70%;
+    color: #0d4d79;
+    opacity: 70%;
 }
 .mustang h6 {
-  color: #0d4d79;
+    color: #0d4d79;
 }
 
 .bmw {
-  height: 110vh;
-  scroll-snap-align: start;
-  margin-top: 50px;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .bmw:hover img {
-  -webkit-animation: carslide 0.7s ease-in-out forwards;
-          animation: carslide 0.7s ease-in-out forwards;
+    -webkit-animation: carslide 0.7s ease-in-out forwards;
+    animation: carslide 0.7s ease-in-out forwards;
 }
 .bmw .h2-container {
-  color: #531010;
-  opacity: 70%;
+    color: #531010;
+    opacity: 70%;
 }
 .bmw h6 {
-  color: #531010;
+    color: #531010;
 }
 
 .bugatti {
-  height: 110vh;
-  scroll-snap-align: start;
-  margin-top: 50px;
+    height: 110vh;
+    scroll-snap-align: start;
+    margin-top: 50px;
 }
 .bugatti:hover img {
-  -webkit-animation: carslide 0.7s ease-in-out forwards;
-          animation: carslide 0.7s ease-in-out forwards;
+    -webkit-animation: carslide 0.7s ease-in-out forwards;
+    animation: carslide 0.7s ease-in-out forwards;
 }
 .bugatti .h2-container {
-  color: #ff6413;
-  opacity: 70%;
+    color: #ff6413;
+    opacity: 70%;
 }
 .bugatti h6 {
-  color: #ff6413;
+    color: #ff6413;
 }
 
 .car-content {
-  position: relative;
+    position: relative;
 }
 .car-content .grid-car {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 5% 60% 35%;
-  grid-template-rows: 40% 60%;
-  grid-template-areas: "side date date" "side car txt";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 60% 35%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "side date date" "side car txt";
 }
 .car-content .grid-car .car-txt {
-  grid-area: txt;
+    grid-area: txt;
 }
 .car-content .grid-car .car-txt h4 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .car-content .grid-car .car-txt p {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .car-content .grid-car .h2-container {
-  grid-area: date;
-  position: relative;
+    grid-area: date;
+    position: relative;
 }
 .car-content .grid-car .h2-container h2 {
-  grid-area: date;
-  top: -100px;
-  position: absolute;
-  font-size: 500px;
-  left: -50px;
-  z-index: -3;
+    grid-area: date;
+    top: -100px;
+    position: absolute;
+    font-size: 500px;
+    left: -50px;
+    z-index: -3;
 }
 .car-content .img-container {
-  -webkit-animation: carslide 0.5s ease-in;
-          animation: carslide 0.5s ease-in;
-  grid-area: car;
-  position: relative;
+    -webkit-animation: carslide 0.5s ease-in;
+    animation: carslide 0.5s ease-in;
+    grid-area: car;
+    position: relative;
 }
 .car-content .img-container :first-child {
-  position: absolute;
-  top: -30px;
-  left: -1200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 350%;
-  width: 130%;
+    position: absolute;
+    top: -30px;
+    left: -1200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 350%;
+    width: 130%;
 }
 
 @-webkit-keyframes carslide {
-  0% {
-    opacity: 0%;
-    transform: translateX(-700px);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(1100px);
-  }
+    0% {
+        opacity: 0%;
+        transform: translateX(-700px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(1100px);
+    }
 }
 
 @keyframes carslide {
-  0% {
-    opacity: 0%;
-    transform: translateX(-700px);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(1100px);
-  }
+    0% {
+        opacity: 0%;
+        transform: translateX(-700px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(1100px);
+    }
 }
 .all-container {
-  height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+    height: 100vh;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 .all-container header {
-  height: 100vh;
-  scroll-snap-align: start;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 .all-container main {
-  scroll-snap-align: start;
-  height: 100vh;
+    scroll-snap-align: start;
+    height: 100vh;
 }
 .all-container footer {
-  scroll-snap-align: start;
-  height: 100vh;
-}/*# sourceMappingURL=index.css.map */
+    scroll-snap-align: start;
+    height: 100vh;
+} /*# sourceMappingURL=index.css.map */

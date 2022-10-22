@@ -1,0 +1,36 @@
+.all-container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    header {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .aston-martin {
+        height: 110vh;
+        scroll-snap-align: start;
+        margin-top: 50px;
+    }
+    .mustang {
+        height: 110vh;
+        scroll-snap-align: start;
+        margin-top: 50px;
+    }
+    .bmw {
+        height: 110vh;
+        scroll-snap-align: start;
+        margin-top: 50px;
+    }
+    .bugatti {
+        height: 110vh;
+        scroll-snap-align: start;
+        margin-top: 50px;
+    }
+
+    footer {
+        scroll-snap-align: start;
+        height: 100vh;
+    }
+}
